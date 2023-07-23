@@ -12,6 +12,8 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
 );
 
+builder.Services.AddAutoMapper(typeof(Program));
+
 // Add services to the container.
 
 builder.Services.AddControllers();
